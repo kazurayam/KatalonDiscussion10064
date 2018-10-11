@@ -43,9 +43,11 @@ When I executed the Test Case, I got the following messages in the log:
 
 ## Conclusion
 
-In my environement, the Test Lister TL and the Test Case TC successfully read and update the GlobalVariable of type java.util.Map.
+In my environment, the Test Lister TL and the Test Case TC successfully read and update the GlobalVariable of type java.util.Map.
 
-I presume the questioner who raised the original question has a problem unique to his own environment. For example the Groovy source of the GlobalVariable might not have been compiled Groovy properly. I would suggest him the following procedure:
+I presume the questioner who raised the original question has a problem unique to his own environment. For example the Groovy source of the GlobalVariable is not compiled by Groovy properly.
+
+As a countermeasure, I would like to suggest him to take the following procedure:
 
 1. stop Katalon Studio GUI.
 2. remove the `<project directory>/bin/` directory where all of compiled class files are stored including GlobalVariable.
